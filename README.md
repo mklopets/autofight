@@ -17,4 +17,5 @@ Some cool features:
 * **generates a flag for the winning army** _(I just think this is amazing)_
 
 [Link to Bruno's blog](http://www.bitfalls.com/2013/08/autofight-php-job-interview-task-part-1.html)
+
 [Link to demo](http://klopets.me/autofight/)
