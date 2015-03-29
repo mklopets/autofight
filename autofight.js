@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	console.log(battles);
 
 	// draw flag
-	var flagColors = ['lightblue', 'salmon', 'lightgreen', 'skyblue', 'black', 'white', 'orange', '#FFFF66', '#009966', '#999966', '#330066', '#3366CC', '#CC0000', '#003300'];
+	var flagColors = ['lightblue', 'salmon', 'lightgreen', 'skyblue', 'black', 'white', 'orange', '#FFFF66', '#009966', '#999966', '#330066', '#3366CC', '#CC0000'];
 	var numColors = flagColors.length;
 
 	if (flagType == 'verticalStriped') {
