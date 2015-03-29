@@ -1,7 +1,7 @@
 // flag generation
 
 var types = ['horizontalStriped', 'verticalStriped', 'solid'];
-var typeProbabilities = [6,10,0.8];
+var typeProbabilities = [6,10,1];
 
 var flagType = '';
 
@@ -113,6 +113,9 @@ var numTypes = battleTypeImpacts.length;
 
 var battleDeltas = [];
 
+var wins1 = 0;
+var wins2 = 0;
+
 for (var i = 0; i < numBattles; i++) {
 	var formLevels = [Math.random(), Math.random()];
 	var battleType = Math.floor(Math.random() * numTypes);
@@ -124,7 +127,7 @@ for (var i = 0; i < numBattles; i++) {
 	var results = [];
 
 	for (var j = 0; j < 2; j++) {
-		var result = formLevels[j] * capabilities[j][battleType] * battleTypeImpact
+		var result = formLevels[j] * (capabilities[j][battleType] / battleTypeImpact)
 		results.push(result);
 	}
 
@@ -134,9 +137,11 @@ for (var i = 0; i < numBattles; i++) {
 	var winner = '';
 	if (delta > 0) {
 		winner = names[0];
+		wins1++;
 	}
 	else {
 		winner = names[1];
+		wins2++;
 	}
 
 	battles.push({
