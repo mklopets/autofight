@@ -33,7 +33,7 @@ console.log('flag type is: ' + flagType);
 var names = [];
 
 for (var i = 0; i < 2; i++) {
-	var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+	var vowels = ['a', 'a', 'e', 'e', 'i', 'o', 'o', 'u', 'y'];
 	var consonants = ['b', 'c', 'd', 'g', 'k', 'l', 'm', 'n', 'p', 's', 't', 'v']; // not exhaustive
 
 	var a = 97;
